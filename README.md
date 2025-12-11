@@ -18,16 +18,23 @@ Download and install Python from the official website:
 ```bash
 python -m venv venv
 ```
-### 3. Install the required packages 
+
+### 3. Install the required packages
 
 ```bash
 $ pip install -r requirements.txt
 ```
 
-### 3. Setup the enviornment variables 
+### 4. Setup the enviornment variables
 
 ```bash
 $ cp .env.example --> .env
 ```
 
 Set your environment variable in the `.env` file. Like `OPENAI_API_KEY` value.
+
+### 5. Run the FastAPI Server
+
+```
+uvicorn main:app --reload --host 0.0.0.0 --port 3000
+```
