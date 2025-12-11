@@ -18,4 +18,16 @@ Download and install Python from the official website:
 ```bash
 python -m venv venv
 ```
+### 3. Install the required packages 
 
+```bash
+$ pip install -r requirements.txt
+```
+
+### 3. Setup the enviornment variables 
+
+```bash
+$ cp .env.example --> .env
+```
+
+Set your environment variable in the `.env` file. Like `OPENAI_API_KEY` value.
